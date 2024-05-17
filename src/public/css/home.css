@@ -145,9 +145,32 @@ margin: 25px;
   margin: 0px 50px;
   flex-wrap: wrap;
   margin-right: 20px;
-  border: 1px solid #ccc; 
-  padding: 10px; 
+  border: 3px solid #ccc; 
+  border-radius:5px;
+  padding:10px 20px 10px 20px;
+  Gap:10px; 
   margin-bottom: 60px;
+}
+
+.title_box {
+  background-color: #efefef;
+  width: 252px;
+  border-radius: 10px;
+  padding: 10px 25px;
+}
+
+.text {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 75px;
+  color: #0B7077;
+}
+
+.container-button > li>a {
+  color: #FD661F;
+  font-size: 20px;
+  font-weight: 650;
+  text-decoration: none;
 }
 .container-button > li:hover {
   background: #0B7077;
@@ -164,7 +187,7 @@ background-color: #0B7077;
     .content__promotion-overview {
       display: flex;
       gap: 20px;
-      width: 1380px;
+      /* width: 1380px; */
       height: 300px;
       margin: 40px;
 
@@ -175,7 +198,8 @@ background-color: #0B7077;
       border: 1px solid #efefef;
       box-shadow: 1px 0 3px 0 var(--Light-gray-color);
       transition: all ease 0.2s;
-      position: relative;
+      border-radius: 8px;
+      
     }
     
     .content__overview-package:hover {
@@ -209,6 +233,7 @@ background-color: #0B7077;
     
     .content__overview-package-img {
       width: 100%;
+      object-fit: cover;
     }
     
     .content__overview-title {
