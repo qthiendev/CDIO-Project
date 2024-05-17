@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .shadow-custom-sub-menu {
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        }
+        .shadow-custom-product {
+          box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        }
+        .max-width-customer {
+          max-width: 1280px;
+        }
+
+        .truncate-lines {
+          overflow: hidden;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+        }
+
+        .truncate-lines-1 {
+          -webkit-line-clamp: 1;
+        }
+
+        .truncate-lines-2 {
+          -webkit-line-clamp: 2;
+        }
+
+        .flex-50 {
+          flex-basis: 50%;
+          max-width: calc(50% - 5px);
+        }
+        .flex-33 {
+          flex-basis: 33.3333%;
+          max-width: calc(33.3333% - 10px);
+        }
+
+        .flex-100 {
+          flex-basis: 100%;
+          max-width: 100%;
+        }
+        .bg-color {
+          background-color: rgba(210, 230, 228, 1);
+        }
+      }
+    </style>
+    <title>Introduction</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="bg-color">
+      <nav
+        class="p-[10px] flex justify-between items-center lg:max-width-customer lg:mx-auto lg:px-12 max-sm:mx-[10px]"
+      >
+        <img src="/images/introPage/AnhHome.png" class="w-[150px]" alt=" " />
+
+        <ul class="flex justify-center gap-12 text-lg max-md:hidden">
+          <li class="text-orange font-bold">
+            <a href="">Trang chủ</a>
+          </li>
+          <li class="text-[#252641] font-semibold">
+            <a href="">Khóa học</a>
+          </li>
+          <li class="text-[#252641] font-semibold">
+            <a href="">Bài viết</a>
+          </li>
+          <li class="text-[#252641] font-semibold">
+            <a href="">Liên hệ</a>
+          </li>
+        </ul>
+
+        <i
+          class="text-2xl text-white fa-solid fa-bars py-[2px] px-[8px] bg-darkblue rounded-[4px] cursor-pointer hidden max-md:block"
+        ></i>
+
+        <ul class="flex justify-center gap-6">
+          <li class="p-[10px] bg-white rounded-[4px] text-darkblue">
+            <a href="">Log in</a>
+          </li>
+
+          <li class="p-[10px] bg-darkblue rounded-[4px] text-white">
+            <a href="">Sign up</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div
+        class="flex justify-between items-center gap-6 p-[20px] max-md:block lg:max-width-customer lg:mx-auto lg:px-12 max-sm:mx-[10px]"
+      >
+        <div class="flex-1 text-orange">
+          <h1 class="text-6xl font-bold leading-[5rem] max-lg:text-3xl">
+            CUNG CẤP KHÓA HỌC UY TÍN
+          </h1>
+          <h3 class="text-2xl mt-20 max-lg:text-lg">
+            Chúng tôi thấu hiểu và cam kết sẽ đem đến những khóa học chất lượng
+            và uy tín hàng đầu
+          </h3>
+        </div>
+
+        <div class="flex-1">
+          <img class="" src="/images/introPage/none.png" alt="" />
+        </div>
+      </div>
+    </header>
+
+    <main class="">
+      <div class="bg-color lg:max-width-customer lg:mx-auto lg:px-12">
+        <div class="text-center p-[20px]">
+          <h1 class="text-3xl font-bold text-white mb-12">
+            ĐÁP ỨNG ĐA DẠNG LÝ DO HỌC TIẾNG ANH
+          </h1>
+
+          <div class="flex justify-center items-center gap-10 max-md:block">
+            <div class="p-6 bg-white rounded-[12px]">
+              <i
+                class="text-white p-[20px] rounded-[4px] bg-[#E74040] text-2xl fa-brands fa-leanpub"
+              ></i>
+              <h2 class="font-semibold text-[#252641] my-[20px]">
+                LẤY LẠI CĂN BẢN TIẾNG ANH
+              </h2>
+              <div class="w-[30%] h-[2px] bg-[#E74040] mx-auto my-[16px]"></div>
+              <p class="text-[#737373] text-base mx-[50px]">
+                Học tiếng Anh cho người mất gốc để lấy lại căn bản tiếng Anh.
+              </p>
+            </div>
+
+            <div class="p-6 bg-white rounded-[12px] max-md:my-[30px]">
+              <i
+                class="text-white p-[20px] rounded-[4px] bg-[#E74040] text-2xl fa-brands fa-leanpub"
+              ></i>
+              <h2 class="font-semibold text-[#252641] my-[20px]">
+                LẤY LẠI CĂN BẢN TIẾNG ANH
+              </h2>
+              <div class="w-[30%] h-[2px] bg-[#E74040] mx-auto my-[16px]"></div>
+              <p class="text-[#737373] text-base mx-[50px]">
+                Học tiếng Anh cho người mất gốc để lấy lại căn bản tiếng Anh.
+              </p>
+            </div>
+
+            <div class="p-6 bg-white rounded-[12px]">
+              <i
+                class="text-white p-[20px] rounded-[4px] bg-[#E74040] text-2xl fa-brands fa-leanpub"
+              ></i>
+              <h2 class="font-semibold text-[#252641] my-[20px]">
+                LẤY LẠI CĂN BẢN TIẾNG ANH
+              </h2>
+              <div class="w-[30%] h-[2px] bg-[#E74040] mx-auto my-[16px]"></div>
+              <p class="text-[#737373] text-base mx-[50px]">
+                Học tiếng Anh cho người mất gốc để lấy lại căn bản tiếng Anh.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="flex justify-between items-center gap-6 p-[20px] bg-color max-md:block"
+        >
+          <div>
+            <img class="" src="/images/introPage/col-md-6.png" alt="" />
+          </div>
+
+          <div class="flex-1 text-white">
+            <h1 class="text-4xl font-semibold leading-[5rem] max-lg:text-2xl">
+              TIẾNG ANH CHUẨN QUỐC TẾ DÀNH CHO MỌI LỨA TUỔI
+            </h1>
+            <h3 class="text-2xl mt-20 max-lg:text-lg">
+              Problems trying to resolve the conflict between the two major
+              realms of Classical physics: Newtonian mechanics
+            </h3>
+
+            <div class="text-[#23A6F0] text-lg mt-8 cursor-pointer">
+              <a href="">
+                Learn More
+                <i class="ml-[10px] text-sm fa-solid fa-chevron-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="lg:max-width-customer lg:mx-auto lg:px-12 max-sm:mx-[10px] bg-[#004643]"
+      >
+        <div class="text-center py-8 max-lg:mx-[10px]">
+          <h1 class="text-3xl font-bold text-white mb-12">
+            ĐỘI NGŨ GIÁO VIÊN CHUYÊN NGHIỆP
+          </h1>
+
+          <div
+            class="flex items-center justify-center gap-10 max-md:block max-md:p-[10px]"
+          >
+            <div
+              class="relative flex flex-col items-center py-[20px] px-[50px] bg-white max-md:mb-[30px]"
+            >
+              <img
+                class="w-[80px] h-[80px] rounded-[50%]"
+                src="https://s3-alpha-sig.figma.com/img/af1d/60de/4fee5f50930c914082b35955b2cc5220?Expires=1716768000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YYiT-K3iGYwuBiZ82M0b2Qs7v4hNkEN1MHTSIv~83ZxDpMStElwI8dKvc-9Pu17ZRlSLfEauVWF7S89EJA3PiDBnPwtUjg5cYX1MXKpPd~KKWqdX8TNYFunpUXJYm1MgR3RY9N107wnbwILquIC6LJiiWNRiMfUfI3AOkIH4H6PfTM795AigAvIEfZ~vxMTfffiG7ngKRM5LP6V1ab17lS5ooSmR7qujH8lv964xJhvJUuRbh5pOtTGbVEwRqsIePeTRg7PqL1mRYdsnaetBTuh4EF0FvGUuZDdUn~vv9hNOcKT7aKX6z0OyHQzRl-RoBe7qYnumt9nRTljP1esGow__"
+                alt=""
+              />
+
+              <ul class="text-[#737373] font-semibold text-lg mt-[10px]">
+                <li>-8.0 IELTS Overall</li>
+                <li>-Thạc sĩ Giảng dạy ngôn ngữ</li>
+                <li>-Cử nhân</li>
+                <li>RMIT</li>
+              </ul>
+
+              <div class="text-[#F3CD03] text-lg mt-[40px]">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+
+              <h3 class="font-bold text-[#252B42] text-xl my-[10px]">JENNIE</h3>
+              <span class="font-medium text-[#737373] text-xl">Teacher</span>
+
+              <span
+                class="absolute left-[-20px] top-0 w-[2px] h-[100%] bg-white max-md:hidden"
+              ></span>
+            </div>
+
+            <div
+              class="relative flex flex-col items-center py-[20px] px-[50px] bg-white"
+            >
+              <img
+                class="w-[80px] h-[80px] rounded-[50%]"
+                src="https://s3-alpha-sig.figma.com/img/af1d/60de/4fee5f50930c914082b35955b2cc5220?Expires=1716768000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YYiT-K3iGYwuBiZ82M0b2Qs7v4hNkEN1MHTSIv~83ZxDpMStElwI8dKvc-9Pu17ZRlSLfEauVWF7S89EJA3PiDBnPwtUjg5cYX1MXKpPd~KKWqdX8TNYFunpUXJYm1MgR3RY9N107wnbwILquIC6LJiiWNRiMfUfI3AOkIH4H6PfTM795AigAvIEfZ~vxMTfffiG7ngKRM5LP6V1ab17lS5ooSmR7qujH8lv964xJhvJUuRbh5pOtTGbVEwRqsIePeTRg7PqL1mRYdsnaetBTuh4EF0FvGUuZDdUn~vv9hNOcKT7aKX6z0OyHQzRl-RoBe7qYnumt9nRTljP1esGow__"
+                alt=""
+              />
+
+              <ul class="text-[#737373] font-semibold text-lg mt-[10px]">
+                <li>-8.0 IELTS Overall</li>
+                <li>-Thạc sĩ Giảng dạy ngôn ngữ</li>
+                <li>-Cử nhân</li>
+                <li>RMIT</li>
+              </ul>
+
+              <div class="text-[#F3CD03] text-lg mt-[40px]">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+
+              <h3 class="font-bold text-[#252B42] text-xl my-[10px]">JENNIE</h3>
+              <span class="font-medium text-[#737373] text-xl">Teacher</span>
+              <span
+                class="absolute right-[-20px] top-0 w-[2px] h-[100%] bg-white max-md:hidden"
+              ></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex justify-center py-12">
+          <div class="text-center max-w-[900px]">
+            <span class="text-xl font-semibold text-[#23A6F0]"
+              >Practice Advice</span
+            >
+            <h1 class="text-4xl font-bold text-white my-[20px] max-md:text-xl">
+              JOIN US
+            </h1>
+            <p class="text-lg text-white max-md:text-base max-md:m-[20px]">
+              Problems trying to resolve the conflict between the two major
+              realms of Classical physics: Newtonian mechanics
+            </p>
+
+            <div class="relative mt-[200px] max-lg:m-[20px] max-md:mt-[100px]">
+              <input
+                class="p-[24px] w-[100%] rounded-[12px] outline-none"
+                type="text"
+                required
+                placeholder="Your email"
+              />
+              <span
+                class="absolute right-[1px] top-[50%] translate-y-[-50%] p-[23px] bg-[#23A6F0] rounded-r-[12px] cursor-pointer text-base text-white font-semibold"
+                >Subscribe</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- footer -->
+    <footer
+      class="p-[40px] mt-[50px] bg-[#f8f8f8] max-lg:p-[20px] max-sm:p-[10px]"
+    >
+      <div class="lg:max-width-customer lg:mx-auto">
+        <div class="flex justify-between items-start flex-wrap gap-[24px]">
+          <div>
+            <h4 class="text-[#575153] text-sm font-medium">INFORMATION</h4>
+            <ul class="mt-4">
+              <li class="text-[#727272] text-xs my-[10px]">
+                the quick fox jumps over the lazy dog
+              </li>
+              <div
+                class="flex justify-start gap-8 text-2xl mt-[30px] text-[#23A6F0]"
+              >
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-solid fa-dove"></i>
+              </div>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-[#575153] text-sm font-medium">WHY BUY FROM US</h4>
+            <ul class="mt-4">
+              <li class="text-[#727272] text-xs my-[10px]">Secure shopping</li>
+              <li class="text-[#727272] text-xs my-[10px]">Testimonials</li>
+              <li class="text-[#727272] text-xs my-[10px]">Award winning</li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-[#575153] text-sm font-medium">YOUR ACCOUNT</h4>
+            <ul class="mt-4">
+              <li class="text-[#727272] text-xs my-[10px]">Sign in</li>
+              <li class="text-[#727272] text-xs my-[10px]">Register</li>
+              <li class="text-[#727272] text-xs my-[10px]">View cart</li>
+              <li class="text-[#727272] text-xs my-[10px]">
+                View your lookbook
+              </li>
+
+              <li class="text-[#727272] text-xs my-[10px]">
+                Track an order Up
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-[#575153] text-sm font-medium">LOOKBOOK</h4>
+            <ul class="mt-4">
+              <li class="text-[#727272] text-xs my-[10px]">Latest posts</li>
+              <li class="text-[#727272] text-xs my-[10px]">Men’s lookbook</li>
+              <li class="text-[#727272] text-xs my-[10px]">Women’s lookbook</li>
+              <li class="text-[#727272] text-xs my-[10px]">
+                Lookbooks RSS feed
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/menu.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              dark: "#333333",
+              blue: "#32bfc2",
+              grayLight: "#f8f8f8",
+              darkblue: "#0b7077",
+              orange: "#FD661F",
+            },
+          },
+          backgroundImage: {
+            "hero-pattern": "url('/assets/images/banner.png')",
+          },
+        },
+      };
+    </script>
+  </body>
+</html>

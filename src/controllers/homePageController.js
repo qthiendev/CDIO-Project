@@ -10,4 +10,24 @@ const renderHomePage = async (req, res) => {
     }
 }
 
-module.exports = { renderHomePage }
+const renderIntroPage = async (req, res) => {
+    try {
+
+        res.render("introPage.ejs");
+
+    } catch(err) {
+        console.log('Error: ', err);
+    }
+}
+
+const renderDetailPage = async (req, res) => {
+    try {
+
+        res.render("detailPage.ejs");
+
+    } catch(err) {
+        console.log('Error: ', err);
+    }
+}
+
+module.exports = { renderHomePage, renderIntroPage, renderDetailPage }
