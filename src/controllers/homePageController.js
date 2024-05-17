@@ -40,4 +40,14 @@ const renderUploadPage = async (req, res) => {
     }
 }
 
-module.exports = { renderHomePage, renderIntroPage, renderDetailPage, renderUploadPage }
+const renderLoginPage = async (req, res) => {
+    try {
+
+        res.render("login.ejs");
+
+    } catch (err) {
+        console.log('Error: ', err);
+    }
+}
+
+module.exports = { renderHomePage, renderIntroPage, renderDetailPage, renderUploadPage, renderLoginPage }
