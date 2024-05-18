@@ -3,10 +3,11 @@ const router = express.Router();
 
 const { renderHomePage, renderIntroPage, renderDetailPage, renderUploadPage, renderLoginPage } = require('../controllers/homePageController');
 
-router.get("/introduction", renderIntroPage);
+router.get("/Introduction", renderIntroPage);
 router.get("/", renderHomePage);
-router.get("/detail_course", renderDetailPage);
-router.get("/upload_course", renderUploadPage);
-router.get("/login", renderLoginPage);
+router.get("/Home", renderHomePage);
+router.get("/DetailCourse", renderDetailPage);
+router.get("/UploadCourse", renderUploadPage);
+router.get("/Login", renderLoginPage);
 
 module.exports = router;
