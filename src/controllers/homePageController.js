@@ -2,9 +2,9 @@ const { getHomePage } = require('../services/getHomePage');
 
 const renderHomePage = async (req, res) => {
     try {
-
-        res.render("homePage.ejs");
-
+        var data = await getHomePage();
+        console.log('homePageController.js | Rendered Homepage: ');
+        res.render("homePage.ejs", {data});
     } catch (err) {
         console.log('homePageController.js | Failed to render Homepage: ', err);
     }
