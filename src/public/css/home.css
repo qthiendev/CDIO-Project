@@ -32,9 +32,10 @@ header{
 .menu{
   flex: 3;
   display: flex;
+  justify-content: space-around;
 }
 .menu > li{
-  padding: 12px 50px;
+  /* padding: 12px 50px; */
   
 
 }
@@ -44,6 +45,7 @@ color: #FD661F;
 }
 
 .menu >li>a {
+  width: 100px;
 font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -187,7 +189,8 @@ background-color: #0B7077;
     .content__promotion-overview {
       display: flex;
       gap: 20px;
-      /* width: 1380px; */
+      /* width: 1380px;   */
+      width: auto;
       height: 300px;
       margin: 40px;
 
@@ -200,6 +203,10 @@ background-color: #0B7077;
       transition: all ease 0.2s;
       border-radius: 8px;
       
+    }
+
+    .content__overview-package> img {
+      object-fit: cover;
     }
     
     .content__overview-package:hover {
