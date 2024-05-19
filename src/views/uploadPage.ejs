@@ -44,15 +44,27 @@
         </div>
 
         <span class="form_input">
+
           <div class="form-group">
-            <label for="name">Tên khóa học</label><br />
+            <label class="form_title" for="name">Tên khóa học</label><br />
             <input type="text" id="name" />
           </div>
+
           <div class="form-group">
-            <label for="old">Độ tuổi</label><br />
+            <label class="form_title" for="name">Cấp độ khoá học</label><br />
+            <input type="text" id="name" />
+          </div>
+
+          <div class="form-group">
+            <label class="form_title" for="name">Giá tiền</label><br />
+            <input type="text" id="name" />
+          </div>
+
+          <div class="form-group">
+            <label class="form_title" for="old">Độ tuổi</label><br />
             <div class="btn">
               <form action=" " class="dropdown-list">
-                <select name="age" id="age">
+                <select name="age" id="age" class="edit">
                   <option value=" ">... age</option>
                   <option value=" ">... age </option>
                   <option value=" ">... age </option>
@@ -62,10 +74,10 @@
             </div>
           </div>
           <div class="form-group">
-            <label for="education">Trình độ học vấn</label><br />
+            <label class="form_title" for="education">Trình độ học vấn</label><br />
             <div class="btn">
               <form action=" " class="dropdown-list">
-                <select name="level" id="level">
+                <select name="level" id="level" class="edit">
                   <option value=" ">Trình độ học vấn</option>
                   <option value=" ">Trình độ học vấn</option>
                   <option value=" ">Trình độ học vấn</option>
@@ -75,10 +87,10 @@
             </div>
           </div>
           <div class="form-group">
-            <label for="time">Thời lượng khóa học</label><br />
+            <label class="form_title" for="time">Thời lượng khóa học</label><br />
             <div class="btn">
               <form action=" " class="dropdown-list">
-                <select name="course__time" id="course_time">
+                <select name="course__time" id="course_time" class="edit">
                   <option value=" ">Thoi gian</option>
                   <option value=" ">Thoi gian</option>
                   <option value=" ">Thoi gian</option>
@@ -88,18 +100,15 @@
             </div>
           </div>
           <div class="form-group">
-            <label for="calendar">Lịch học</label><br />
+            <label class="form_title" for="calendar">Lịch học</label><br />
             <input type="text" id="calendar" />
           </div>
           <h2>Notes</h2>
           <div class="form-group2">
-            <label for="note">Mô tả chi tiết</label><br />
+            <label class="form_title" for="note">Mô tả chi tiết</label><br />
             <textarea name="note" id="note" rows="10" cols="50"></textarea>
           </div>
-          <div class="form-group2">
-            <label for="note">Phương pháp giảng dạy</label><br />
-            <textarea name="note" id="note" rows="10" cols="50"></textarea>
-          </div>
+          
         </span>
       </div>
       <div class="button_submit">

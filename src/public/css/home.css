@@ -398,3 +398,22 @@ border: 1px;
 background-color: #81e8f0; 
  
 }
+
+
+.port{
+  display: flex;
+  justify-content: center;
+}
+      .content__promotion-overview {
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
+        height: auto;
+        margin-left: 20px ;
+      }
+      .col{
+        flex-basis: 20%;
+        max-width: (20%-6px);
+        height: auto;
+        margin: 20px;
+      }
