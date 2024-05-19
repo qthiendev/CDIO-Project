@@ -69,29 +69,34 @@
             <div class="col l-4 m-12 c-12 mt-40">
               <div class="content__overview-package">
 
-                <img src="/images/homePage/Anhhome4.png" height="150px" width="200px" alt=""
+                <img src="<%= data[i].course_path %>" height="150px" width="200px" alt=""
                   class="content__overview-package-img">
-                <span class="content__overview-time">1-28 July 2024</span>
+                <span class="content__overview-time">
+                  Mức độ: <%= data[i].course_level %>
+                </span>
 
                 <h2 class="content__overview-title">
-                  <%= data[i].cp_name %>
+                  <%= data[i].course_name %>
                 </h2>
 
                 <p class="ovreview-package-heading">
-                  <%= data[i].cp_mobile%>
+                  
+                  Thời Lượng: <%= data[i].course_duration %>
                 </p>
                 <p class="ovreview-package-heading">
-                  <%= data[i].cp_email%>
+                  Lịch học: <%= data[i].course_schedule %>
                 </p>
                 <p class="ovreview-package-heading">
-                  <%= data[i].cp_address%>
+                  <%= data[i].course_desc %>
                 </p>
 
                 <div class="add">
-                  <p class="content__overview-price">1.500.000VND</p>
-                  <a href="">
+                  <p class="content__overview-price">
+                    <%= data[i].course_price %> VNĐ
+                  </p>
+                  <a href="/DetailCourse/<%= data[i].course_id.trim() %>">
                     <button class="content__overview-button">Tham gia</button>
-                  </a>
+                  </a>                  
                 </div>
 
               </div>

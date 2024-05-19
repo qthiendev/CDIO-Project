@@ -6,7 +6,7 @@ const { renderHomePage, renderIntroPage, renderDetailPage, renderUploadPage, ren
 router.get("/Introduction", renderIntroPage);
 router.get("/", renderHomePage);
 router.get("/Home", renderHomePage);
-router.get("/DetailCourse", renderDetailPage);
+router.get("/DetailCourse/(:id)", renderDetailPage);
 router.get("/UploadCourse", renderUploadPage);
 router.get("/Login", renderLoginPage);
 
