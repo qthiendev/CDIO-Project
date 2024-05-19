@@ -1,3 +1,4 @@
+const { getDetailCourse } = require('../services/getDetailCourse');
 const { getHomePage } = require('../services/getHomePage');
 
 const renderHomePage = async (req, res) => {
@@ -22,9 +23,11 @@ const renderIntroPage = async (req, res) => {
 
 const renderDetailPage = async (req, res) => {
     try {
-
-        res.render("detailPage.ejs");
-
+        let id = req.params;
+        var data = await getDetailCourse(id);
+        res.render("detailPage.ejs", {
+            detailCourse: data
+        });
     } catch (err) {
         console.log('Error: ', err);
     }
