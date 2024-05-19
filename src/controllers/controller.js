@@ -1,6 +1,7 @@
 const { getHomePage } = require('../services/getHomePage');
 const { getDetailPage } = require('../services/getDetailPage');
 const { getSearchPage } = require('../services/getSearchPage');
+const { uploadCourse } = require('../services/uploadCourse');
 
 const renderHomePage = async (req, res) => {
     try {
@@ -41,6 +42,16 @@ const renderUploadPage = async (req, res) => {
     }
 }
 
+const uploadingCourse = async (req, res) => {
+    try {
+        await uploadCourse(req);
+        res.redirect('/');
+    } catch (err) {
+        //console.log('Error: ', err);
+        res.redirect('/UploadCourse');
+    }
+}
+
 const renderLoginPage = async (req, res) => {
     try {
 
@@ -60,4 +71,4 @@ const renderSearchPage = async (req, res) => {
     }
 }
 
-module.exports = { renderHomePage, renderIntroPage, renderDetailPage, renderUploadPage, renderLoginPage, renderSearchPage }
+module.exports = { renderHomePage, renderIntroPage, renderDetailPage, renderUploadPage, renderLoginPage, renderSearchPage, uploadingCourse }
