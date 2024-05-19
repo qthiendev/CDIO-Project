@@ -25,6 +25,7 @@
           weigth="200px"
         />
       </div>
+      
       <div class="menu">
         <ul class="menu">
           <li><a href="">Trang chủ</a></li>
@@ -33,12 +34,12 @@
           <li><a href="">Liên hệ</a></li>
         </ul>
       </div>
-      <form action="" id="ladi_search">
-        <button type="submit" id="search-btn">
-          <i class="fa-solid fa-magnifying-glass"></i>
-        </button>
-        <input type="text" placeholder="Search" id="search-text" />
+
+      <form action="/Search" id="ladi_search">
+        <button type="submit" id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <input type="text" placeholder="Search" id="search-text" name="search-text">
       </form>
+
     </header>
 
     <div class="introduction">
@@ -96,7 +97,7 @@
                 <div class="add">
                   <p class="content__overview-price"><%= data[i].course_price %> VNĐ</p>
                   <a href="">
-                    <button class="content__overview-button">Tham gia</button>
+                    <button class="content__overview-button"><a href="/DetailCourse?id=<%= data[i].course_id%>">Tham gia</a></button>
                   </a>
                 </div>
               </div>
