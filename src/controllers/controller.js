@@ -1,5 +1,6 @@
-const { getDetailCourse } = require('../services/getDetailCourse');
 const { getHomePage } = require('../services/getHomePage');
+const { getDetailPage } = require('../services/getDetailPage');
+const { getSearchPage } = require('../services/getSearchPage');
 
 const renderHomePage = async (req, res) => {
     try {
@@ -13,9 +14,8 @@ const renderHomePage = async (req, res) => {
 
 const renderIntroPage = async (req, res) => {
     try {
-
+        
         res.render("introPage.ejs");
-
     } catch (err) {
         console.log('Error: ', err);
     }
@@ -23,11 +23,9 @@ const renderIntroPage = async (req, res) => {
 
 const renderDetailPage = async (req, res) => {
     try {
-        let id = req.params;
-        var data = await getDetailCourse(id);
-        res.render("detailPage.ejs", {
-            detailCourse: data
-        });
+        console.log(req.query.id);
+        var data = await getDetailPage(req.query.id);
+        res.render("detailPage.ejs", {data});
     } catch (err) {
         console.log('Error: ', err);
     }
@@ -53,4 +51,13 @@ const renderLoginPage = async (req, res) => {
     }
 }
 
-module.exports = { renderHomePage, renderIntroPage, renderDetailPage, renderUploadPage, renderLoginPage }
+const renderSearchPage = async (req, res) => {
+    try {
+        var data = await getSearchPage(req.query['search-text']);
+        res.render("searchPage.ejs", {data});
+    } catch (err) {
+        console.log('Error: ', err);
+    }
+}
+
+module.exports = { renderHomePage, renderIntroPage, renderDetailPage, renderUploadPage, renderLoginPage, renderSearchPage }

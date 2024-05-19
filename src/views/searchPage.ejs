@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/css/detailCourse.css" />
+    <title>Detail Cousre</title>
+  </head>
+  <body>
+    <header>
+      <div class="introduce"></div>
+      <div class="ladi-image">
+        <img
+          src="/images/detailPage/AnhHome.png"
+          height="64px"
+          weigth="250px"
+        />
+      </div>
+      <div class="menu">
+        <ul class="menu">
+          <li><a href="">Trang chủ</a></li>
+          <li><a href="">Khóa học</a></li>
+          <li><a href="">Bài viết</a></li>
+          <li><a href="">Liên hệ</a></li>
+        </ul>
+      </div>
+      <form action="/Search" id="ladi_search">
+        <button type="submit" id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <input type="text" placeholder="Search" id="search-text" name="search-text">
+      </form>
+    </header>
+    <div class="ports">
+      <div class="port">
+        <div class="content__promotion-overview">
+
+          <% for(var i=0; i<data.length; i++) {%>
+            <div class="col l-4 m-12 c-12 mt-40">
+              <div class="content__overview-package">
+
+                <img src="<%= data[i].course_path %>" height="150px" width="200px" alt=""
+                  class="content__overview-package-img">
+                <span class="content__overview-time">
+                  Mức độ: <%= data[i].course_level %>
+                </span>
+
+                <h2 class="content__overview-title">
+                  <%= data[i].course_name %>
+                </h2>
+
+                <p class="ovreview-package-heading">
+                  
+                  Thời Lượng: <%= data[i].course_duration %>
+                </p>
+                <p class="ovreview-package-heading">
+                  Lịch học: <%= data[i].course_schedule %>
+                </p>
+                <p class="ovreview-package-heading">
+                  <%= data[i].course_desc %>
+                </p>
+
+                <div class="add">
+                  <p class="content__overview-price">
+                    <%= data[i].course_price %> VNĐ
+                  </p>
+                  <a href="/DetailCourse?id=<%= data[i].course_id.trim() %>">
+                    <button class="content__overview-button">Tham gia</button>
+                  </a>                  
+                </div>
+
+              </div>
+            </div>
+            <% } %>
+
+        </div>
+      </div>
+  </body>
+</html>
