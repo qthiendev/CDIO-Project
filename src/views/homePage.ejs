@@ -49,68 +49,142 @@
 
   <content>
     <div class="container">
-      <div class="container-name">
-        <h1>Các khóa học nổi bật</h1>
-      </div>
-      <ul class="container-button">
-        <li><a href="">Tất cả</a></li>
-        <li><a href="">Bắt đầu</a></li>
-        <li><a href="">Cơ bản</a></li>
-        <li><a href="">Trung cấp</a></li>
-        <li><a href="">Công sở</a></li>
-        <li><a href="">Nâng cao</a></li>
-      </ul>
-    </div>
-    <div class="ports">
-      <div class="port">
-        <div class="content__promotion-overview">
-
-          <% for(var i=0; i<data.length; i++) {%>
-            <div class="col l-4 m-12 c-12 mt-40">
-              <div class="content__overview-package">
-
-                <img src="<%= data[i].course_path %>" height="150px" width="200px" alt=""
-                  class="content__overview-package-img">
-                <span class="content__overview-time">
-                  Mức độ: <%= data[i].course_level %>
-                </span>
-
-                <h2 class="content__overview-title">
-                  <%= data[i].course_name %>
-                </h2>
-
-                <p class="ovreview-package-heading">
-                  
-                  Thời Lượng: <%= data[i].course_duration %>
-                </p>
-                <p class="ovreview-package-heading">
-                  Lịch học: <%= data[i].course_schedule %>
-                </p>
-                <p class="ovreview-package-heading">
-                  <%= data[i].course_desc %>
-                </p>
-
-                <div class="add">
-                  <p class="content__overview-price">
-                    <%= data[i].course_price %> VNĐ
-                  </p>
-                  <a href="/DetailCourse/<%= data[i].course_id.trim() %>">
-                    <button class="content__overview-button">Tham gia</button>
-                  </a>                  
-                </div>
-
-              </div>
-            </div>
-            <% } %>
-
+        <div class="container-name">
+            <h1>Các khóa học nổi bật</h1>
         </div>
-      </div>
-      <div class="button-click">
-
-        <button class="button-open">Xem tất cả</button>
-
-      </div>
-  </content>
+          <ul class="container-button">
+            <li><a href = "">Tất cả</a></li>
+            <li><a href = "">Bắt đầu</a></li>
+            <li><a href = "">Cơ bản</a></li>
+            <li><a href = "">Trung cấp</a></li>
+            <li><a href = "">Công sở</a></li>
+            <li><a href = "">Nâng cao</a></li>
+          </ul>  
+    </div>
+   
+<div class="port">
+    <div class="content__promotion-overview">
+        <div class="col">
+            <div class="content__overview-package">
+              <img src="img/Anhhome4.png"  height="150px" width="200px"  alt=""class="content__overview-package-img">  
+              <span class="content__overview-time">1-28 July 2024</span>
+                <h2 class="content__overview-title">Tiếng anh sơ cấp</h2>
+         <p class="ovreview-package-heading">
+          Khóa học dành cho những người mới bắt đầu học tiếng anh. Học viên sẽ học các kiến thức cơ bản về ngữ pháp, từ vựng và kĩ năng giao tiếp hàng ngày.
+         </p>
+         <div class="add">
+          <p class = "content__overview-price">1.500.000VND</p>
+          <a href="">
+          <button  class="content__overview-button">Tham gia</button>
+        </a>
+        </div>
+            </div> 
+         </div>
+        <div class="col">
+            <div class="content__overview-package">
+              <img src="img/Anhhome4.png"  height="150px" width="200px"  alt=""class="content__overview-package-img">  
+              <span class="content__overview-time">1-28 July 2024</span>
+                <h2 class="content__overview-title">Tiếng anh sơ cấp</h2>
+         <p class="ovreview-package-heading">
+          Khóa học dành cho những người mới bắt đầu học tiếng anh. Học viên sẽ học các kiến thức cơ bản về ngữ pháp, từ vựng và kĩ năng giao tiếp hàng ngày.
+         </p>
+         <div class="add">
+          <p class = "content__overview-price">1.500.000VND</p>
+          <a href="">
+          <button  class="content__overview-button">Tham gia</button>
+        </a>
+        </div>
+            </div> 
+         </div>
+        <div class="col">
+            <div class="content__overview-package">
+              <img src="img/Anhhome4.png"  height="150px" width="200px"  alt=""class="content__overview-package-img">  
+              <span class="content__overview-time">1-28 July 2024</span>
+                <h2 class="content__overview-title">Tiếng anh sơ cấp</h2>
+         <p class="ovreview-package-heading">
+          Khóa học dành cho những người mới bắt đầu học tiếng anh. Học viên sẽ học các kiến thức cơ bản về ngữ pháp, từ vựng và kĩ năng giao tiếp hàng ngày.
+         </p>
+         <div class="add">
+          <p class = "content__overview-price">1.500.000VND</p>
+          <a href="">
+          <button  class="content__overview-button">Tham gia</button>
+        </a>
+        </div>
+            </div> 
+         </div>
+         <div class="col">
+            <div class="content__overview-package">
+              <img src="img/Anhhome4.png"  height="150px" width="200px"  alt=""class="content__overview-package-img">  
+              <span class="content__overview-time">1-28 July 2024</span>
+                <h2 class="content__overview-title">Tiếng anh sơ cấp</h2>
+         <p class="ovreview-package-heading">
+          Khóa học dành cho những người mới bắt đầu học tiếng anh. Học viên sẽ học các kiến thức cơ bản về ngữ pháp, từ vựng và kĩ năng giao tiếp hàng ngày.
+         </p>
+         <div class="add">
+          <p class = "content__overview-price">1.500.000VND</p>
+          <a href="">
+          <button  class="content__overview-button">Tham gia</button>
+        </a>
+        </div>
+            </div> 
+         </div>
+         <div class="col">
+            <div class="content__overview-package">
+              <img src="img/Anhhome4.png"  height="150px" width="200px"  alt=""class="content__overview-package-img">  
+              <span class="content__overview-time">1-28 July 2024</span>
+                <h2 class="content__overview-title">Tiếng anh sơ cấp</h2>
+         <p class="ovreview-package-heading">
+          Khóa học dành cho những người mới bắt đầu học tiếng anh. Học viên sẽ học các kiến thức cơ bản về ngữ pháp, từ vựng và kĩ năng giao tiếp hàng ngày.
+         </p>
+         <div class="add">
+          <p class = "content__overview-price">1.500.000VND</p>
+          <a href="">
+          <button  class="content__overview-button">Tham gia</button>
+        </a>
+        </div>
+            </div> 
+         </div>
+         <div class="col">
+            <div class="content__overview-package">
+              <img src="img/Anhhome4.png"  height="150px" width="200px"  alt=""class="content__overview-package-img">  
+              <span class="content__overview-time">1-28 July 2024</span>
+                <h2 class="content__overview-title">Tiếng anh sơ cấp</h2>
+         <p class="ovreview-package-heading">
+          Khóa học dành cho những người mới bắt đầu học tiếng anh. Học viên sẽ học các kiến thức cơ bản về ngữ pháp, từ vựng và kĩ năng giao tiếp hàng ngày.
+         </p>
+         <div class="add">
+          <p class = "content__overview-price">1.500.000VND</p>
+          <a href="">
+          <button  class="content__overview-button">Tham gia</button>
+        </a>
+        </div>
+            </div> 
+         </div>
+         <div class="col">
+            <div class="content__overview-package">
+              <img src="img/Anhhome4.png"  height="150px" width="200px"  alt=""class="content__overview-package-img">  
+              <span class="content__overview-time">1-28 July 2024</span>
+                <h2 class="content__overview-title">Tiếng anh sơ cấp</h2>
+         <p class="ovreview-package-heading">
+          Khóa học dành cho những người mới bắt đầu học tiếng anh. Học viên sẽ học các kiến thức cơ bản về ngữ pháp, từ vựng và kĩ năng giao tiếp hàng ngày.
+         </p>
+         <div class="add">
+          <p class = "content__overview-price">1.500.000VND</p>
+          <a href="">
+          <button  class="content__overview-button">Tham gia</button>
+        </a>
+        </div>
+            </div> 
+         </div>
+         <!-- Data thêm dữ liệu mới ở đây -->
+         </div> 
+ </div>
+    <div class="button-click">
+  
+    <button class="button-open">Xem tất cả</button>
+  
+</div>
+</content>
 
   <div class="content_intro">
     <div class="conten_intro-picture">
