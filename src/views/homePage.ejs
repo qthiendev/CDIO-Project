@@ -25,12 +25,11 @@
         <li><a href="">Liên hệ</a></li>
       </ul>
     </div>
-    <form action="" id="ladi_search">
+    <form action="/Search" id="ladi_search">
       <button type="submit" id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
-      <input type="text" placeholder="Search" id="search-text">
-
+      <input type="text" placeholder="Search" id="search-text" name="search-text">
     </form>
-
+    
   </header>
 
   <div class="introduction">
@@ -94,7 +93,7 @@
                   <p class="content__overview-price">
                     <%= data[i].course_price %> VNĐ
                   </p>
-                  <a href="/DetailCourse/<%= data[i].course_id.trim() %>">
+                  <a href="/DetailCourse?id=<%= data[i].course_id.trim() %>">
                     <button class="content__overview-button">Tham gia</button>
                   </a>                  
                 </div>

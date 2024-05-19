@@ -41,10 +41,10 @@
     <div class="wrapper">
       <div class="main_detail">
         <div class="image_course">
-          <img src="/images/detailPage/AnhDetail.png" />
+          <img src="<%= data.course_path %>" />
         </div>
         <div class="introduce_course">
-          <h2>Tiếng anh cơ bản</h2>
+          <h2><%= data["course_name"]%></h2>
           <span class="star">
             <i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star"></i>
@@ -56,30 +56,30 @@
             <ul>
               <li class="information">
                 <span class="text1">Độ tuổi:</span>
-                <span class="text2">Từ 7 tuổi trở lên.</span>
+                <span class="text2"><%= data["course_for_age"]%></span>
               </li>
               <li class="information">
                 <span class="text1">Trình độ học vấn:</span>
-                <span class="text2">Không yêu cầu.</span>
+                <span class="text2"><%= data["learn_level_required"]%></span>
               </li>
               <li class="information">
                 <span class="text1">Trình độ ngoại ngữ:</span>
                 <span class="text2"
-                  >Hoàn thành kiểm tra đầu vào của trung tâm.</span
+                  ><%= data["course_level"]%></span
                 >
               </li>
               <li class="information">
                 <span class="text1">Thời lượng khóa học:</span>
-                <span class="text2">6 tháng.</span>
+                <span class="text2"><%= data["course_duration"]%></span>
               </li>
               <li class="information">
                 <span class="text1">Lịch học:</span>
                 <span class="text2"
-                  >Tiếng Anh giao tiếp: 3 buổi/tuần, 1,5 giờ/buổi.</span
+                  ><%= data["course_schedule"]%></span
                 >
               </li>
               <li><hr class="underline" /></li>
-              <li><b class="text4">2.000.000 VND</b></li>
+              <li><b class="text4"><%= data["course_price"]%> VND</b></li>
               <li>
                 <a href=""><button class="btn">Apply now</button></a>
               </li>
@@ -92,22 +92,7 @@
         <hr class="underline1" />
         <div class="content">
           <p class="text5">
-            Một khóa học tiếng Anh cơ bản cung cấp kiến thức và kỹ năng cần
-            thiết để bắt đầu học tiếng Anh từ đầu. Khóa học này thường nhằm giúp
-            người học xây dựng nền tảng vững chắc về ngữ pháp, từ vựng, phát âm
-            và kỹ năng giao tiếp cơ bản trong tiếng Anh.
-          </p>
-          <p class="text5">
-            Trong khóa học tiếng Anh cơ bản, người học sẽ được hướng dẫn về các
-            khái niệm cơ bản như cách xây dựng câu, cấu trúc ngữ pháp, quy tắc
-            chia động từ, cách sử dụng từ vựng trong ngữ cảnh khác nhau và cách
-            phát âm đúng các âm tiếng Anh
-          </p>
-          <p class="text5">
-            Ngoài ra, khóa học cũng tập trung vào việc phát triển kỹ năng nghe,
-            nói, đọc và viết. Người học sẽ có cơ hội luyện nghe qua các bài
-            nghe, thực hành giao tiếp thông qua các hoạt động nhóm và vai trò
-            chơi, đọc các văn bản tiếng Anh đơn giản và viết các bài tập ngắn.
+            <%= data["course_desc"]%>
           </p>
         </div>
       </span>
