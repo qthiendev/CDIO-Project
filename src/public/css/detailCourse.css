@@ -112,6 +112,7 @@
     height: 500px;
   }
   .image_course img{
+    object-fit: cover;
     width: 90%;
     height: 100%;
     margin-left: 40px;
@@ -211,10 +212,16 @@
   .content {
       max-width: 800px; 
       margin: 10px auto;
-      padding:  30px ; /* Thêm đệm cho nội dung */
-      background-color: none; /* Màu nền cho nội dung */ 
+      padding:  30px ; 
+      background-color: none; 
   }
   .text5{
+    background-color: #69d4c9;
+    padding: 20px 100px;
+    border-radius: 12px;  
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
     margin: 20px;
     font-size: 16px;
     color: #191919;
@@ -265,7 +272,7 @@
     color: #191919;
     width: 254px;
     height: 30px;
-    background-color: #0bb2a1;
+    background-color: #eebbc3;
     text-align: center;
     padding-top: 10px;
   }
