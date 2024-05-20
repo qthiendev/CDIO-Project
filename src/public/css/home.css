@@ -139,6 +139,7 @@ header {
   padding: 0px 50px;
 }
 .container-button > li {
+  min-width: max-content;
   margin: 0px 50px;
   flex-wrap: wrap;
   margin-right: 20px;

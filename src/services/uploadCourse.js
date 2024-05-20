@@ -1,4 +1,5 @@
-const {queryEEB, queryEEBSetOnly} = require('../database/queryEEB');
+const { queryEEB, queryEEBSetOnly } = require("../database/queryEEB");
+const path = require('path')
 
 const uploadCourse = async (req) => {
     try {
@@ -11,8 +12,11 @@ const uploadCourse = async (req) => {
             duration,
             calendar,
             note
-        } = req.query
-        console.log(req.query);
+        } = req.body;
+
+        // Xử lý thông tin về tệp tải lên
+        
+        const filePath = path.join('/uploads', req.file.filename);
 
         let lastID = (await queryEEB("SELECT TOP 1 course_id FROM COURSE ORDER BY course_id DESC"))[0]['course_id'];
         let nextId = "C" + ("00" + (parseInt(lastID.slice(1)) + 1)).slice(-3);
@@ -30,7 +34,7 @@ const uploadCourse = async (req) => {
                 cp_id) 
             VALUES (N'${nextId}', 
                 N'${name}', 
-                N'/Uploads/cat.jpg', 
+                N'${filePath}', 
                 N'${age}', 
                 N'${level_required}', 
                 N'${level}', 
@@ -40,13 +44,11 @@ const uploadCourse = async (req) => {
                 ${price},
                 N'CP001')`;
 
-        console.log(queryAdd)
-
         await queryEEBSetOnly(queryAdd);
     } catch (err) {
-        //console.log('uploadCourse.js | Failed to get Homepage: ', err);
-        throw "";
+        console.error('Error uploading course:', err);
+        throw err;
     }
-}
+};
 
 module.exports = { uploadCourse };

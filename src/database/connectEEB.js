@@ -3,7 +3,7 @@ const sql = require("mssql");
 const config = {
   driver: "msnodesqlv8",
   user: "sa",
-  password: "123456",
+  password: "Test@password",
   server: "localhost",
   database: "EEB",
   options: {
