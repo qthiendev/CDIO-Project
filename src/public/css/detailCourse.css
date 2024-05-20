@@ -45,12 +45,25 @@
     height: auto;
   }
   .menu {
-    flex: 2;
+    /* flex: 2;
+    display: flex; */
+    flex: 3;
     display: flex;
+    justify-content: space-around;
   }
   
   .menu>li {
-    padding: 12px 35px;
+    /* padding: 12px 35px; */
+  }
+
+  .menu>li>a {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21.13px;
+    letter-spacing: 2%;
+    color: #0b7077;
+    text-decoration: none;
   }
   
   #ladi_search {
