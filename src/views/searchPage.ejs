@@ -11,6 +11,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="/css/detailCourse.css" />
+    <link rel="stylesheet" href="/css/home.css">
     <title>Detail Cousre</title>
   </head>
   <body>
@@ -36,13 +37,13 @@
         <input type="text" placeholder="Search" id="search-text" name="search-text">
       </form>
     </header>
-    <div class="ports">
+    <div style="background-color: #232946;" class="ports">
       <div class="port">
         <div class="content__promotion-overview">
 
           <% for(var i=0; i<data.length; i++) {%>
             <div class="col l-4 m-12 c-12 mt-40">
-              <div class="content__overview-package">
+              <div style="background-color: #eebbc3;" class="content__overview-package">
 
                 <img src="<%= data[i].course_path %>" height="150px" width="200px" alt=""
                   class="content__overview-package-img">
@@ -50,13 +51,14 @@
                   Mức độ: <%= data[i].course_level %>
                 </span>
 
-                <h2 class="content__overview-title">
+                <h2  style="margin: 8px 0;" class="content__overview-title">
                   <%= data[i].course_name %>
                 </h2>
 
                 <p class="ovreview-package-heading">
                   
                   Thời Lượng: <%= data[i].course_duration %>
+                  
                 </p>
                 <p class="ovreview-package-heading">
                   Lịch học: <%= data[i].course_schedule %>
@@ -66,11 +68,11 @@
                 </p>
 
                 <div class="add">
-                  <p class="content__overview-price">
+                  <p  style="color: #232946;" class="content__overview-price">
                     <%= data[i].course_price %> VNĐ
                   </p>
                   <a href="/DetailCourse?id=<%= data[i].course_id.trim() %>">
-                    <button class="content__overview-button">Tham gia</button>
+                    <button style="background-color: #b8c1ec;" class="content__overview-button">Tham gia</button>
                   </a>                  
                 </div>
 
