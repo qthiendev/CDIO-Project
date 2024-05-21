@@ -112,6 +112,7 @@
     height: 500px;
   }
   .image_course img{
+    border: 8px;
     object-fit: cover;
     width: 90%;
     height: 100%;
@@ -132,7 +133,7 @@
   .introduce_course h2{
     color: #000000;
     font-size: 32px;
-    font:Inter;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding-bottom: 20px;
   
   }
