@@ -22,17 +22,27 @@ const removeDiacritics = (str) => str.replace(/[áàảãạăắằẳẵặâ�
 const getSearchPage = async (criteria) => {
     try {
         var data = await queryEEB('select * from dbo.COURSE');
+        let dataLevel = data;
+        let dataName = data;
         console.log(`getSearchPage.js | Got ${removeDiacritics(criteria.toLowerCase())}: `);
 
         if (criteria !== "" && criteria !== undefined) {
-            data = data.filter((record) =>
+            dataName = data.filter((record) =>
                 removeDiacritics(record.course_name.toLowerCase()).includes(
+                    removeDiacritics(criteria.toLowerCase())
+                )
+            );
+
+            dataLevel = data.filter((record) =>
+                removeDiacritics(record.course_level.toLowerCase()).includes(
                     removeDiacritics(criteria.toLowerCase())
                 )
             );
         }
 
-        return data;
+        let mergedData = [...new Set([...dataName, ...dataLevel])];
+
+        return mergedData;
     } catch (err) {
         console.log('getSearchPage.js | Failed to get Homepage: ', err);
     }
