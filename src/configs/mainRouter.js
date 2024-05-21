@@ -25,7 +25,7 @@ const { renderHomePage,
 } = require('../controllers/controller');
 
 router.get("/Introduction", renderIntroPage);
-router.get("/", renderHomePage);
+router.get("/", renderIntroPage);
 router.get("/Home", renderHomePage);
 router.get("/DetailCourse", renderDetailPage);
 router.get("/UploadCourse", renderUploadPage);
