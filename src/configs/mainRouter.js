@@ -14,8 +14,6 @@ const upload = multer({
     })
 });
 
-  
-
 const { renderHomePage,
     renderIntroPage,
     renderDetailPage,
